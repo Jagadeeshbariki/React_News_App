@@ -1,0 +1,6 @@
+/* src/Main/Main.module.css */
+.PaginationContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

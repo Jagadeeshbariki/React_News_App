@@ -1,0 +1,24 @@
+.loader{
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(27, 29, 27, 0.591);
+}
+
+/* Above style will block the website until the data fetched */
+
+.loaderImg{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 300px;
+    margin: auto;
+}
+
+/* above style will show the loader img to the ceter of the webpage */
+ 

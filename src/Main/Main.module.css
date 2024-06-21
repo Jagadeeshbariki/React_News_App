@@ -1,0 +1,16 @@
+.MainCantainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+
+#Main{
+    margin-top: 105px;
+}
+
+@media screen and (min-width:300px) and (max-width:500px){
+    #Main{
+        margin-top: 140px;
+    }
+}
