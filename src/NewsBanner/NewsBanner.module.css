@@ -3,15 +3,15 @@
     width: 450px;
     background-color: rgba(173, 216, 230, 0.869);
     margin: 25px 10px 10px 10px ;
-    border-radius: 20px;
+    border-radius:0px 20px;
     position: relative;
-    box-shadow: 5px 5px 8px rgba(255, 255, 255, 0.79);
+    box-shadow: 5px 3px 5px rgba(255, 255, 255, 0.79);
     overflow-y: auto;
 }
 
 .NewsBannerHeading{
     background-color: rgba(99, 112, 117, 0.759) ;
-    border-radius: 20px 20px 0 0;
+    border-radius: 0px 20px 0 0;
     font-size: 18px;
 }
 
@@ -28,7 +28,7 @@
 
 .NewsBannerFooter{
     background-color:rgba(99, 112, 117, 0.759) ;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 0px 20px;
     position: absolute;
     bottom: 0px;
     width: 100%;

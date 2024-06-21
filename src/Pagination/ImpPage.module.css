@@ -4,3 +4,9 @@
     justify-content: center;
     margin-top: 20px;
 }
+
+@media screen and(min-width:300px) and (max-width:500)  {
+  .PaginationContainer{
+    width: 100%;
+  }
+}

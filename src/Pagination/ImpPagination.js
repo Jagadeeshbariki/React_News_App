@@ -1,27 +1,23 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, {  useEffect, useState } from 'react';
 import styles from './ImpPage.module.css';
 import Pagination from 'react-bootstrap/Pagination';
-import { CurArtcileContext } from './CurrentArticleContex';
+import { useDispatch } from 'react-redux';
 
 
-const ImpPagination = (props) => {
-
-    const { article} = props.Art;
-    const [articles] = useState(article);
+const ImpPagination = ({articles}) => {
+    
     const [currentPage, setCurrentPage] = useState(1);
     const [articlesPerPage] = useState(6);
+    const dispatch = useDispatch();
+
+   useEffect(()=>{
     const indexOfLastArticle = currentPage * articlesPerPage;
     const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
-    // const currentArticles = articles.slice(indexOfFirstArticle, indexOfLastArticle);
-    const {setCurArticle} = useContext(CurArtcileContext);
-    
-    
-    
-    useEffect(() => {
-        const currentArticles = articles.slice(indexOfFirstArticle, indexOfLastArticle);
-        setCurArticle(currentArticles);
-    }, [articles, currentPage, setCurArticle, indexOfFirstArticle, indexOfLastArticle]);
-    
+    const currentArticles = articles.slice(indexOfFirstArticle, indexOfLastArticle);
+    dispatch({type:'SET_CUR_ARTICLES', payload:currentArticles});
+    console.log(currentArticles)
+   },[currentPage, articles, dispatch])
+
 
     // Change page
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
