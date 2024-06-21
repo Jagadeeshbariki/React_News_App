@@ -1,6 +1,6 @@
 import {configureStore} from '@reduxjs/toolkit';
 import { appReducer } from '../Reducer/AppReducer';
-import logger from 'redux-logger';
+// import logger from 'redux-logger';
 
 export const InitialValue = {
     showLoader:false,

@@ -16,7 +16,7 @@ const ImpPagination = ({articles}) => {
     const currentArticles = articles.slice(indexOfFirstArticle, indexOfLastArticle);
     dispatch({type:'SET_CUR_ARTICLES', payload:currentArticles});
     console.log(currentArticles)
-   },[currentPage, articles, dispatch])
+   },[currentPage, articles, dispatch,articlesPerPage])
 
 
     // Change page

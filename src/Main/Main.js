@@ -48,7 +48,7 @@ const Main = () => {
           fetchNews();
         }
         
-    }, [keyword])
+    }, [keyword, dispatch])
 
 
   return (
