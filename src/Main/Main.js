@@ -29,7 +29,7 @@ const Main = () => {
         const fetchNews = async()=>{
             try{
               
-                const response = await axios.get(`https://newsapi.org/v2/everything?q=${keyword}&apikey=091fcdf40de64946b7816a9cdb744d5`); //091fcdf40de64946b7816a9cdb744d55
+                const response = await axios.get(`https://newsapi.org/v2/everything?q=${keyword}&apikey=091fcdf40de64946b7816a9cdb744d55`); //091fcdf40de64946b7816a9cdb744d55
                 setArticle(response.data.articles);
                 
             }
